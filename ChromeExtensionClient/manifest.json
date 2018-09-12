@@ -1,0 +1,22 @@
+{
+  "name": "Real Time Cricket Score Demo",
+  "version": "1.0",
+  "description":
+    "Real time Cricket Score Update from Serverless Azure Functions pop up on the desktop.",
+  "icons": {"16": "16.png", "48": "48.png", "128": "128.png"},
+  "permissions": [
+    "background",
+  	"tabs",
+    "notifications",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": { 
+    "persistent": true,
+    "scripts": ["axios.min.js","signalr.js","signalrclient.js"] },
+  "manifest_version": 2,
+
+  "web_accessible_resources": [
+    "48.png"
+  ]
+}
